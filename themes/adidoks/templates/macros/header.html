@@ -13,7 +13,7 @@
 			{% if config.extra.menu.social %}
 				{% for val in config.extra.menu.social %}
 					<li class="nav-item">
-						<a class="nav-link" href="{{ val.url | safe }}">{{ val.pre | safe }}<span class="ms-2 visually-hidden">{{ val.name }}</span></a>
+						<a class="nav-link" rel="me" href="{{ val.url | safe }}">{{ val.pre | safe }}<span class="ms-2 visually-hidden">{{ val.name }}</span></a>
 					</li>
 				{% endfor %}
 			{% else %}
